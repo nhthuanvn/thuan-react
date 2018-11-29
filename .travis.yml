@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t nhthuanvn/thuan-react -f Dockerfile .
+  - docker build -t nhthuanvn/thuan-react -f Dockerfile.dev .
 
 script:
   - docker run nhthuanvn/thuan-react npm run test -- --coverage
