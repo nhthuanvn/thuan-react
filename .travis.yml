@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run nhthuanvn/thuan-react npm run test -- --coverage
+
+deploy:
+  provider: elasticbenstalk
+  region: "us-east-2"
+  app: "thuan-react"
+  env: "ThuanReact-env"
+  bucket_name: "elasticbeanstalk-us-east-2-621388440900"
+  bucket_path: "thuan-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
