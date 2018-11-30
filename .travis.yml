@@ -12,7 +12,7 @@ deploy:
   provider: elasticbenstalk
   region: "us-east-2"
   app: "thuan-react"
-  env: "ThuanReact-env"
+  env: "ThuanReact-env-1"
   bucket_name: "elasticbeanstalk-us-east-2-621388440900"
   bucket_path: "thuan-react"
   on:
