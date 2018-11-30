@@ -9,7 +9,7 @@ script:
   - docker run nhthuanvn/thuan-react npm run test -- --coverage
 
 deploy:
-  provider: elasticbenstalk
+  provider: elasticbeanstalk
   region: "us-east-2"
   app: "thuan-react"
   env: "ThuanReact-env-2"
